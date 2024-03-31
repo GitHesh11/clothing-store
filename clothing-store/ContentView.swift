@@ -2,20 +2,24 @@
 //  ContentView.swift
 //  clothing-store
 //
-//  Created by Yesh Adithya on 2024-03-28.
+//  Created by Bagi on 2024-03-28.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("current_status") var status:Bool = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView{
+            Group{
+                if status{
+                    Home()
+                }else{
+                    Login()
+                }
+            }
         }
-        .padding()
+
     }
 }
 

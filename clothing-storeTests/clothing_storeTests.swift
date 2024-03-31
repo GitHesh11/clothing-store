@@ -2,7 +2,7 @@
 //  clothing_storeTests.swift
 //  clothing-storeTests
 //
-//  Created by Yesh Adithya on 2024-03-28.
+//  Created by Bagi on 2024-03-28.
 //
 
 import XCTest
